@@ -18,7 +18,7 @@ const Learning = () =>{
                     Data.map((value,index)=>{
                         return <Card
                             imgsrc={value.imgsrc}
-                            title={value.title}
+                            title={value.title+ '1'}
                             sname={value.sname}
                             link={value.link}
                             key={index}
