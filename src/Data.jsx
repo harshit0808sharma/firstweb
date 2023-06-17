@@ -6,7 +6,7 @@ const Data = [
     {
     imgsrc:img1,
     title:"Language",
-    sname:"HTML",
+    sname:"Html",
     link:"/Learning/html"
     },
     {
