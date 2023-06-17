@@ -7,7 +7,7 @@ const Navbar = () =>{
             <div>
                 <ol className="navbar_list">
                     <li>
-                        <h4 className="heading"> Programming </h4>
+                        <h4 className="heading"> Programming12 </h4>
                     </li>
                     <ol className="menu_list">
                         <li>

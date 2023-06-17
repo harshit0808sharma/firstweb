@@ -1,9 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Routes, Route } from 'react-router-dom';
-import Html from './HTML';
-import CSS from './CSS';
-import Javascript from './Learning/Javscript';
 const LearningNav = () =>{
     return(
         <>
