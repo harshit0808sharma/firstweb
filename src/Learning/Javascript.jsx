@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Javscript = () => {
+const Javascript = () => {
   return (
     <>
         <h1>this is javascript page</h1>
@@ -8,4 +8,4 @@ const Javscript = () => {
   );
 };
 
-export default Javscript;
+export default Javascript;

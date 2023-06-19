@@ -6,9 +6,9 @@ import About from './About';
 import Learning from './Learning';
 import Contact from './Contact';
 import Navbar from './Navbar';
-import Javscript from './Learning/Javscript';
-import CSS from './CSS';
-import Html from './HTML';
+import Javascript from './Learning/Javascript';
+import CSS from './Learning/CSS';
+import Html from './Learning/HTML';
 
 
 const App = () => {
@@ -19,11 +19,10 @@ const App = () => {
         <Routes>
           <Route exact path='/' element={<Home/>}/>
           <Route exact path='/About' element={<About/>}/>
-          {/* <Route exact path='/Learning' element={<Learning/>}/> */}
-          <Route path="/Learning" element={<Learning />}></Route>
-          <Route path="/learning/css" element={<CSS />} />
-          <Route path="/learning/javascript" element={<Javscript />} />
-          <Route path='/learning/html' element={<Html />}></Route>
+          <Route exact path="/Learning" element={<Learning />}/>
+          <Route exact path="/learning/css" element={<CSS />} />
+          <Route exact path="/learning/javascript" element={<Javascript />}/>
+          <Route exact path='/learning/html' element={<Html />}/>
           <Route exact path='/Contact' element={<Contact/>}/>
           <Route exact path='*' element={<Home/>}/>
         </Routes>

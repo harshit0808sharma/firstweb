@@ -2,6 +2,7 @@ import React from 'react';
 import ComHA from './ComHA';
 import img2 from './images/programming3.png';
 
+
 const About = () =>{
     return(
         <> 
