@@ -13,7 +13,7 @@ const Card = (props) =>{
                         <span className="card_category">{props.title}</span>
                         <h3 className="card_title">{props.sname}</h3>
                         <NavLink to={props.link}>
-                            <button>Click to Learn</button>
+                            <button className="learning_button">Click to Learn</button>
                         </NavLink>
                     </div>
                 </div>

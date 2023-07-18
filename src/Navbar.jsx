@@ -1,29 +1,46 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import HomeIcon from '@material-ui/icons/Dehaze';
+import { useState } from "react";
+//import Home from "./Home";
 
 const Navbar = () =>{
+
+    const[isMobile, setIsMobile] = useState(false);
+
+
     return(
         <>
             <div>
-                <ol className="navbar_list">
-                    <li>
-                        <h4 className="heading"> Programming </h4>
-                    </li>
-                    <ol className="menu_list">
+                <nav className="navbar">
+                    <h1 className="logo"> Programming </h1>
+                    <ol className={isMobile ? "nav_links_mobile" : "nav_links"}
+                    onClick={() => setIsMobile(false)}
+                    >
                         <li>
-                            <NavLink exact to="/" className="menu"> Home </NavLink>
+                            <NavLink exact to="/" className="menu" onClick={()=>setIsMobile(false)}> Home </NavLink>
                         </li>
                         <li>
-                            <NavLink exact to="/About" className="menu"> About </NavLink>
+                            <NavLink exact to="/About" className="menu" onClick={()=>setIsMobile(false)}> About </NavLink>
                         </li>
                         <li>
-                            <NavLink exact to="/Learning" className="menu"> Learning </NavLink>
+                            <NavLink exact to="/Learning" className="menu" onClick={()=>setIsMobile(false)}> Learning </NavLink>
                         </li>
                         <li>
-                            <NavLink exact to="/Contact" className="menu"> Contact </NavLink>
+                            <NavLink exact to="/Contact" className="menu" onClick={()=>setIsMobile(false)}> Contact </NavLink>
                         </li>
                     </ol>
-                </ol>
+                    
+                    <button className="mobile_menu_icon"
+                    onClick={() => setIsMobile(!isMobile)}
+                    >
+                        {isMobile ? (
+                        <HomeIcon/>
+                        ) : (
+                        <HomeIcon/>
+                        )}
+                    </button>
+                    </nav>    
             </div>
         </>
     );

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
@@ -9,7 +8,6 @@ import Navbar from './Navbar';
 import Javascript from './Learning/Javascript';
 import CSS from './Learning/CSS';
 import Html from './Learning/HTML';
-
 
 const App = () => {
   return (

@@ -1,8 +1,6 @@
 import React from 'react';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Data from './Data';
 import Card from './Card';
-
 
 const Learning = () =>{
         return(
